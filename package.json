@@ -1,0 +1,15 @@
+{
+  "name": "healthcare-appointment-system",
+  "version": "1.0.0",
+  "description": "MERN Stack Healthcare Appointment System",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "seed": "node seeder.js",
+    "start-backend": "cd backend && npm start",
+    "start-frontend": "cd frontend && npm start"
+  },
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
